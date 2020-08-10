@@ -9,9 +9,7 @@
 
 ### IntelliJ IDEA ###
 .idea
-.idea/.gitignore
 .out
 *.iws
 *.iml
 *.ipr
-
