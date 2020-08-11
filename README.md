@@ -14,6 +14,8 @@
 ####为了交互对象之间的松耦合设计而努力
 
 ###Chapter3  Decorator
+###装饰者模式
+####动态地将责任附加到对象上。若要扩展功能，装饰罩提供了比继承更有弹性的替代方案。
 ###Chapter4  Abstract
 ###Chapter5  Factor
 ###Chapter6  Factor Method
