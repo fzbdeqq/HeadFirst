@@ -1,6 +1,7 @@
 package com.snail.headFirst.chapter4.product;
 
 import com.snail.headFirst.chapter4.product.ingredient.*;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.Veggies;
 
 import java.util.ArrayList;
 

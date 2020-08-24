@@ -1,7 +1,10 @@
 package com.snail.headFirst.chapter4.creator.ingredient;
 
-import com.snail.headFirst.chapter4.creator.ingredient.PizzaIngredientFactory;
 import com.snail.headFirst.chapter4.product.ingredient.*;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.BlackOlives;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.EggPlant;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.Spinach;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.Veggies;
 
 /**
  * @Author: SnailBBB
@@ -16,17 +19,19 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Sauce createSauce() {
-        return new MarinaraSauce();
+        return new PlumTomatoSauce();
     }
 
     @Override
     public Cheese createCheese() {
-        return new ReggianoCheese();
+        return new MozzarellaCheese();
     }
 
     @Override
     public Veggies[] createVeggies() {
-        Veggies[]veggies={new Garlic(),new Onion(),new Mushroom(),new RedPaper()};
+        Veggies[]veggies={new BlackOlives(),
+                new Spinach(),
+                new EggPlant()};
         return veggies;
     }
 
@@ -37,6 +42,6 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Clams createClam() {
-        return new FreshClams();
+        return new FrozenClams();
     }
 }

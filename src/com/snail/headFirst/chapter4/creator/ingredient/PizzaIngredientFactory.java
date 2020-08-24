@@ -1,6 +1,7 @@
 package com.snail.headFirst.chapter4.creator.ingredient;
 
 import com.snail.headFirst.chapter4.product.ingredient.*;
+import com.snail.headFirst.chapter4.product.ingredient.veggies.Veggies;
 
 /**
  * @Author: SnailBBB
