@@ -28,6 +28,8 @@
 ###抽象工厂模式
 ####提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。
 ###Chapter5  Factor
+###单利模式
+####确保一个类只有一个实例，并提供全局访问点
 ###Chapter6  Factor Method
 ###Chapter7  Singleton
 ###Chapter8  Command
