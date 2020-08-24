@@ -3,7 +3,9 @@ package com.snail.headFirst.chapter3.condiment;
 import com.snail.headFirst.chapter3.Beverage;
 
 public class Soy extends CondimentDecorator {
+
     Beverage beverage;
+
     public Soy(Beverage beverage) {
         this.beverage=beverage;
     }
@@ -15,6 +17,8 @@ public class Soy extends CondimentDecorator {
 
     @Override
     public double cost() {
-        return .15+beverage.cost();
+        return .15+beverage.cost()+beverage.getSize();
     }
+
+
 }
