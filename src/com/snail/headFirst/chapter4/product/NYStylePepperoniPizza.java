@@ -6,4 +6,8 @@ package com.snail.headFirst.chapter4.product;
  * @Date: 2020/8/24 20:07
  */
 public class NYStylePepperoniPizza extends Pizza {
+    @Override
+    public void prepare() {
+
+    }
 }

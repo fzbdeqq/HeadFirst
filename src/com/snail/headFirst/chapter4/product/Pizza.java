@@ -1,5 +1,7 @@
 package com.snail.headFirst.chapter4.product;
 
+import com.snail.headFirst.chapter4.product.ingredient.*;
+
 import java.util.ArrayList;
 
 /**
@@ -7,18 +9,23 @@ import java.util.ArrayList;
  * @Description:
  * @Date: 2020/8/24 19:53
  */
-public class Pizza {
+public abstract class Pizza {
     String name;
-    String dough;
-    String sauce;
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clams;
     ArrayList toppings=new ArrayList();
-    public void prepare() {
-        System.out.println("Preparing "+name);
-        System.out.println("Tossing dough....");
-        System.out.println("Adding sauce....");
-        System.out.println("Adding toppings:");
-        toppings.stream().forEach(item-> System.out.println("    "+item));
-    }
+//    public  void prepare() {
+//        System.out.println("Preparing "+name);
+//        System.out.println("Tossing dough....");
+//        System.out.println("Adding sauce....");
+//        System.out.println("Adding toppings:");
+//        toppings.stream().forEach(item-> System.out.println("    "+item));
+//    }
+    public abstract void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");
@@ -34,5 +41,9 @@ public class Pizza {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

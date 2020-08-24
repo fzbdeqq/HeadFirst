@@ -6,4 +6,8 @@ package com.snail.headFirst.chapter4.product;
  * @Date: 2020/8/24 19:57
  */
 public class GreekPizza extends Pizza {
+    @Override
+    public void prepare() {
+
+    }
 }
