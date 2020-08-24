@@ -4,7 +4,7 @@ import com.snail.headFirst.chapter4.product.ingredient.*;
 
 /**
  * @Author: SnailBBB
- * @Description: 原料
+ * @Description: 抽象工厂模式
  * @Date: 2020/8/24 20:39
  */
 public interface PizzaIngredientFactory {
