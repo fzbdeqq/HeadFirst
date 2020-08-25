@@ -1,5 +1,8 @@
 package com.snail.headFirst.chapter6;
 
+import com.snail.headFirst.chapter6.command.GarageDoorOpenCommand;
+import com.snail.headFirst.chapter6.command.LightOnCommand;
+
 /**
  * @Author: SnailBBB
  * @Description:

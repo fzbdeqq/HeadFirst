@@ -31,6 +31,8 @@
 ###单利模式
 ####确保一个类只有一个实例，并提供全局访问点
 ###Chapter6  Factor Method
+###命令模式
+####将“请求”封装成对象，一遍使用不同的请求、队列或者日志来参数化其他对象
 ###Chapter7  Singleton
 ###Chapter8  Command
 ###Chapter9  Adapter

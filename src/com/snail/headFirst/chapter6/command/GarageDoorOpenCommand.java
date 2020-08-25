@@ -1,4 +1,7 @@
-package com.snail.headFirst.chapter6;
+package com.snail.headFirst.chapter6.command;
+
+import com.snail.headFirst.chapter6.GarageDoor;
+import com.snail.headFirst.chapter6.command.Command;
 
 /**
  * @Author: SnailBBB

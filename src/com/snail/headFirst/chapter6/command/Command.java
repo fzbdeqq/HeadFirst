@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter6;
+package com.snail.headFirst.chapter6.command;
 
 /**
  * @Author: SnailBBB
