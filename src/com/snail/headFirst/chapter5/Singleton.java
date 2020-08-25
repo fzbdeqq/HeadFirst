@@ -8,7 +8,7 @@ package com.snail.headFirst.chapter5;
 public class Singleton {
 
     private volatile static Singleton uniqueInstance;
-
+    private Object obj=new Object();
     private Singleton(){}
 
     public static synchronized Singleton getInstance(){
@@ -21,5 +21,9 @@ public class Singleton {
 
         }
         return uniqueInstance;
+    }
+
+    public Object getObj() {
+        return obj;
     }
 }
