@@ -3,6 +3,8 @@ package com.snail.headFirst.chapter6;
 import com.snail.headFirst.chapter6.command.Command;
 import com.snail.headFirst.chapter6.command.NoCommand;
 
+import java.util.Arrays;
+
 /**
  * @Author: SnailBBB
  * @Description:
@@ -19,7 +21,7 @@ public class RemoteControl {
         Command noCommand=new NoCommand();
         for (int i=0;i<7;i++){
             onCommands[i]=noCommand;
-            offCommands[7]=noCommand;
+            offCommands[i]=noCommand;
         }
     }
 
@@ -32,5 +34,13 @@ public class RemoteControl {
     }
     public void offButtonWasPushed(int slot){
         offCommands[slot].execute();
+    }
+
+    @Override
+    public String toString() {
+        return "RemoteControl{" +
+                "onCommands=" + Arrays.toString(onCommands) +
+                ", offCommands=" + Arrays.toString(offCommands) +
+                '}';
     }
 }
