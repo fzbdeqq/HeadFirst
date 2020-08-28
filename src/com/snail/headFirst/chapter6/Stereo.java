@@ -6,6 +6,10 @@ package com.snail.headFirst.chapter6;
  * @Date: 2020/8/25 22:58
  */
 public class Stereo {
+    String name;
+    public Stereo(String name) {
+        this.name=name;
+    }
 
     public void on() {
     }

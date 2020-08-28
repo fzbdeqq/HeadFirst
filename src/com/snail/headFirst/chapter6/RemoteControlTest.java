@@ -16,7 +16,7 @@ public class RemoteControlTest {
         //调用者
         SimpleRemoteControl remote=new SimpleRemoteControl();
 
-        Light light=new Light();
+        Light light=new Light("Living Room");
         LightOnCommand lightOn=new LightOnCommand(light);
 //        lightOn.execute();
 

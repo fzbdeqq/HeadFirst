@@ -7,6 +7,9 @@ package com.snail.headFirst.chapter6;
  */
 public class GarageDoor {
 
+    public GarageDoor(String s) {
+    }
+
     public void up() {
         System.out.println("GarageDoor up");
     }
