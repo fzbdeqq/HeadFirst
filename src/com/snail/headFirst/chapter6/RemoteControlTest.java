@@ -2,6 +2,8 @@ package com.snail.headFirst.chapter6;
 
 import com.snail.headFirst.chapter6.command.GarageDoorOpenCommand;
 import com.snail.headFirst.chapter6.command.LightOnCommand;
+import com.snail.headFirst.chapter6.request.GarageDoor;
+import com.snail.headFirst.chapter6.request.Light;
 
 /**
  * @Author: SnailBBB
@@ -20,7 +22,7 @@ public class RemoteControlTest {
         LightOnCommand lightOn=new LightOnCommand(light);
 //        lightOn.execute();
 
-        GarageDoor garageDoor=new GarageDoor();
+        GarageDoor garageDoor=new GarageDoor("");
         GarageDoorOpenCommand garageDoorOpenCommand=new GarageDoorOpenCommand(garageDoor);
 
         remote.setCommand(lightOn);

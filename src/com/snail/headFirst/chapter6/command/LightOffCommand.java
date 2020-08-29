@@ -1,6 +1,6 @@
 package com.snail.headFirst.chapter6.command;
 
-import com.snail.headFirst.chapter6.Light;
+import com.snail.headFirst.chapter6.request.Light;
 
 /**
  * @Author: SnailBBB
@@ -17,5 +17,10 @@ public class LightOffCommand implements Command {
     @Override
     public void execute() {
         light.off();
+    }
+
+    @Override
+    public void undo() {
+        light.on();
     }
 }

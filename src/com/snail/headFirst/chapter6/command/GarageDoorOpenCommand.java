@@ -1,7 +1,6 @@
 package com.snail.headFirst.chapter6.command;
 
-import com.snail.headFirst.chapter6.GarageDoor;
-import com.snail.headFirst.chapter6.command.Command;
+import com.snail.headFirst.chapter6.request.GarageDoor;
 
 /**
  * @Author: SnailBBB
@@ -18,5 +17,10 @@ public class GarageDoorOpenCommand implements Command {
     @Override
     public void execute() {
         door.up();
+    }
+
+    @Override
+    public void undo() {
+        door.down();
     }
 }

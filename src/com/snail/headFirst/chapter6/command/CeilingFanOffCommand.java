@@ -1,6 +1,7 @@
-package com.snail.headFirst.chapter6;
+package com.snail.headFirst.chapter6.command;
 
 import com.snail.headFirst.chapter6.command.Command;
+import com.snail.headFirst.chapter6.request.CeilingFan;
 
 /**
  * @Author: SnailBBB
@@ -18,5 +19,10 @@ public class CeilingFanOffCommand implements Command {
     @Override
     public void execute() {
         ceilingFan.off();
+    }
+
+    @Override
+    public void undo() {
+        ceilingFan.on();
     }
 }

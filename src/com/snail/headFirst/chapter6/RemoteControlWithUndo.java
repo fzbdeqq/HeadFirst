@@ -10,11 +10,13 @@ import java.util.Arrays;
  * @Description:
  * @Date: 2020/8/25 22:50
  */
-public class RemoteControl {
+public class RemoteControlWithUndo {
     Command[] onCommands;
     Command[] offCommands;
+    Command undoCommand;
 
-    public RemoteControl(){
+
+    public RemoteControlWithUndo(){
         onCommands=new Command[7];
         offCommands=new Command[7];
 
@@ -23,22 +25,30 @@ public class RemoteControl {
             onCommands[i]=noCommand;
             offCommands[i]=noCommand;
         }
+        undoCommand=noCommand;
     }
 
     public void setCommand(int slot,Command onCommand,Command offCommand){
         onCommands[slot]=onCommand;
         offCommands[slot]=offCommand;
     }
+
     public void onButtonWasPushed(int slot){
         if(onCommands[slot]!=null){
             onCommands[slot].execute();
+            undoCommand=onCommands[slot];
         }
-
     }
+
     public void offButtonWasPushed(int slot){
         if(offCommands[slot]!=null){
             offCommands[slot].execute();
+            undoCommand=offCommands[slot];
         }
+    }
+
+    public void undoButtonWasPushed(){
+        undoCommand.undo();
     }
 
     @Override

@@ -5,24 +5,21 @@ import com.snail.headFirst.chapter6.request.Stereo;
 /**
  * @Author: SnailBBB
  * @Description:
- * @Date: 2020/8/25 22:57
+ * @Date: 2020/8/28 22:27
  */
-public class StereoOnWithCDCommand implements Command {
+public class StereoOffCommand implements Command {
     Stereo stereo;
-
-    public StereoOnWithCDCommand(Stereo stereo){
+    public StereoOffCommand(Stereo stereo) {
         this.stereo=stereo;
     }
 
     @Override
     public void execute() {
-        stereo.on();
-        stereo.setCD();
-        stereo.setVolume(11);
+        stereo.off();
     }
 
     @Override
     public void undo() {
-        stereo.off();
+        stereo.on();
     }
 }
