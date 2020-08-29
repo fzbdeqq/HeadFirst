@@ -14,7 +14,6 @@ import com.snail.headFirst.chapter6.request.Stereo;
 public class RemoteLoader {
     public static void main(String[] args) {
 
-
         Light livingRoomLight=new Light("Living Room");
         Light kitchenLight=new Light("Kitchen");
 
@@ -28,7 +27,7 @@ public class RemoteLoader {
         Command kitchenLightOff=new LightOffCommand(kitchenLight);
         //吊扇
         Command ceilingFanHigh=new CeilingFanHighCommand(ceilingFan);
-        Command ceilingFanOn=new CeilingFanHighCommand(ceilingFan);
+        Command ceilingFanMedium=new CeilingFanMediumCommand(ceilingFan);
         Command ceilingFanOff=new CeilingFanOffCommand(ceilingFan);
         //车库门
         Command garageDoorUp=new GarageDoorUpCommand(garageDoor);
@@ -42,6 +41,7 @@ public class RemoteLoader {
         remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff);
         remoteControl.setCommand(2, ceilingFanHigh, ceilingFanOff);
         remoteControl.setCommand(3, stereoOnWithCD, StereoOff);
+        remoteControl.setCommand(4, ceilingFanMedium, ceilingFanOff);
 
         remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
@@ -58,6 +58,20 @@ public class RemoteLoader {
         System.out.println("--------------");
         remoteControl.onButtonWasPushed(3);
         remoteControl.offButtonWasPushed(3);
+        System.out.println("--------------");
+        remoteControl.onButtonWasPushed(4);
+        remoteControl.offButtonWasPushed(4);
+        remoteControl.undoButtonWasPushed();
 
+        System.out.println("--------------");
+        Command[]partyOn={livingRoomLightOn,stereoOnWithCD};
+        Command[]partyOff={livingRoomLightOff,StereoOff};
+
+        Command partOnMacro=new MacroCommand(partyOn);
+        Command partOffMacro=new MacroCommand(partyOff);
+        remoteControl.setCommand(5, partOnMacro, partOffMacro);
+        remoteControl.onButtonWasPushed(5);
+//        remoteControl.offButtonWasPushed(5);
+        remoteControl.undoButtonWasPushed();
     }
 }

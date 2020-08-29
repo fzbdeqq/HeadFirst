@@ -7,19 +7,19 @@ import com.snail.headFirst.chapter6.request.CeilingFan;
  * @Description:
  * @Date 2020/8/27 10:03
  */
-public class CeilingFanOffCommand implements Command {
+public class CeilingFanMediumCommand implements Command {
 
     private CeilingFan ceilingFan;
     private int prevSpeed;
 
-    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+    public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan=ceilingFan;
     }
 
     @Override
     public void execute() {
         prevSpeed=ceilingFan.getSpeed();
-        ceilingFan.off();
+        ceilingFan.medium();
     }
 
     @Override
