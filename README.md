@@ -36,6 +36,11 @@
 ###Chapter7  Adapter\Facade
 ###适配器模式
 ####将一个类的接口，转换成客户期望的另一个接口。适配器让原本接口不兼容的类可以合作无间
+###外观模式
+####提供一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用
+###设计原则
+####最少知识原则————迪米特法制 low of demeter
+
 ###Chapter8  Template Method
 ###Chapter9 Iterator 
 ###Chapter10 Composite
