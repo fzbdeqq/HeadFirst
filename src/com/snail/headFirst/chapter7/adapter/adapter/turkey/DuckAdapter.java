@@ -1,6 +1,6 @@
-package com.snail.headFirst.chapter7.turkey;
+package com.snail.headFirst.chapter7.adapter.adapter.turkey;
 
-import com.snail.headFirst.chapter7.adapter.Duck;
+import com.snail.headFirst.chapter7.adapter.adapter.Duck;
 
 /**
  * @Author: SnailBBB

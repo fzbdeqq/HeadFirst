@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter7.turkey;
+package com.snail.headFirst.chapter7.adapter.adapter.turkey;
 
 /**
  * @Author: SnailBBB

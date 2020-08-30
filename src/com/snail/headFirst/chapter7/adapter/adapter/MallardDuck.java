@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter7.adapter;
+package com.snail.headFirst.chapter7.adapter.adapter;
 
 /**
  * @Author: SnailBBB

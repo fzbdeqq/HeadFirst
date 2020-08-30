@@ -1,11 +1,8 @@
-package com.snail.headFirst.chapter7;
+package com.snail.headFirst.chapter7.adapter.adapter;
 
-import com.snail.headFirst.chapter7.turkey.DuckAdapter;
-import com.snail.headFirst.chapter7.turkey.Turkey;
-import com.snail.headFirst.chapter7.adapter.TurkeyAdapter;
-import com.snail.headFirst.chapter7.turkey.WildTurkey;
-import com.snail.headFirst.chapter7.adapter.Duck;
-import com.snail.headFirst.chapter7.adapter.MallardDuck;
+import com.snail.headFirst.chapter7.adapter.adapter.turkey.DuckAdapter;
+import com.snail.headFirst.chapter7.adapter.adapter.turkey.Turkey;
+import com.snail.headFirst.chapter7.adapter.adapter.turkey.WildTurkey;
 
 /**
  * @Author: SnailBBB
