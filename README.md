@@ -19,7 +19,7 @@
 ###设计原则
 ####开闭原则:类应该对扩展开放，对修改关闭
 
-###Chapter4  Abstract
+###Chapter4  Abstract Factor\ Factor Method
 ###工厂方法模式
 ####让子类决定改创建的对象是什么，来达到对象创建的过程封装的目的。
 ####定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类
@@ -27,19 +27,21 @@
 ####依赖抽象，不要依赖具体类
 ###抽象工厂模式
 ####提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。
-###Chapter5  Factor
+###Chapter5  Singleton
 ###单利模式
 ####确保一个类只有一个实例，并提供全局访问点
-###Chapter6  Factor Method
+###Chapter6  Command
 ###命令模式
 ####将“请求”封装成对象，一遍使用不同的请求、队列或者日志来参数化其他对象
-###Chapter7  Singleton
-###Chapter8  Command
-###Chapter9  Adapter
-###Chapter10 Facade
-###Chapter11 Template Method
-###Chapter12 Iterator
-###Chapter13 Composite
+###Chapter7  Adapter\Facade
+###适配器模式
+####将一个类的接口，转换成客户期望的另一个接口。适配器让原本接口不兼容的类可以合作无间
+###Chapter8  Template Method
+###Chapter9 Iterator 
+###Chapter10 Composite
+###Chapter11 
+###Chapter12 
+###Chapter13 
 ###Chapter14 State
 ###Chapter15 Proxy
 
