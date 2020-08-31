@@ -1,6 +1,6 @@
-package com.snail.headFirst.chapter7.adapter.facade;
+package com.snail.headFirst.chapter7.facade;
 
-import com.snail.headFirst.chapter7.adapter.facade.module.*;
+import com.snail.headFirst.chapter7.facade.module.*;
 
 /**
  * @Author: SnailBBB
