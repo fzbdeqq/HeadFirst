@@ -42,6 +42,8 @@
 ####最少知识原则————迪米特法制 low of demeter
 
 ###Chapter8  Template Method
+###模板方法模式
+####在一个方法定义一个算法的骨架，而将一些步骤延迟到之类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。
 ###Chapter9 Iterator 
 ###Chapter10 Composite
 ###Chapter11 
