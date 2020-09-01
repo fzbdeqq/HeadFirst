@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter10;
+package com.snail.headFirst.chapter10.state;
 
 /**
  * @Author: SnailBBB

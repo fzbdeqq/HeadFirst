@@ -46,14 +46,15 @@
 ####在一个方法定义一个算法的骨架，而将一些步骤延迟到之类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。
 ###好莱坞原则
 ####不要调用我们，我们会调用你
-###Chapter9 Iterator 
+###Chapter9 Iterator/Composite 
 ###迭代器模式
 ####提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示
-###Chapter10 Composite
-###Chapter11 
+###Chapter10 State
+###状态模式
+####允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类
 ###Chapter12 
 ###Chapter13 
-###Chapter14 State
+###Chapter14 
 ###Chapter15 Proxy
 
 ###Bridge

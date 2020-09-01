@@ -6,6 +6,7 @@ package com.snail.headFirst.chapter10;
  * @Date 2020/9/1 19:15
  */
 public class GumballMachine {
+
     final static int SOLD_OUT=0;
     final static int NO_QUARTER=1;
     final static int HAS_QUARTER=2;
