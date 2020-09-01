@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @Description:
  * @Date 2020/9/1 8:51
  */
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu{
     ArrayList menuItems;
 
     public PancakeHouseMenu() {
@@ -43,7 +43,7 @@ public class PancakeHouseMenu implements Menu {
 //        return menuItems;
 //    }
 
-    @Override
+//    @Override
     public Iterator createIterator(){
         return menuItems.iterator();
     }

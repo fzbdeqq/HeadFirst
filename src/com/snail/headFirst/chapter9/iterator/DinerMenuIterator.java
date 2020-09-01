@@ -1,7 +1,6 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * @Author: SnailBBB

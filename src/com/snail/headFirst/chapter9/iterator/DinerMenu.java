@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.Iterator;
 
@@ -7,7 +7,7 @@ import java.util.Iterator;
  * @Description:
  * @Date 2020/9/1 8:58
  */
-public class DinerMenu implements Menu {
+public class DinerMenu {
     static final int MAX_ITEM=6;
     int numberOfItems=0;
     MenuItem[] menuItems;
@@ -45,7 +45,8 @@ public class DinerMenu implements Menu {
 //    public MenuItem[] getMenuItems() {
 //        return menuItems;
 //    }
-    @Override
+
+//    @Override
     public Iterator createIterator(){
         return new DinerMenuIterator(menuItems);
     }

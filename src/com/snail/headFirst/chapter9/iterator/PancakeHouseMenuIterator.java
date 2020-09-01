@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

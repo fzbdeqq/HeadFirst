@@ -1,7 +1,6 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -10,7 +9,7 @@ import java.util.Map;
  * @Description:
  * @Date 2020/9/1 16:20
  */
-public class CafeMenu implements Menu {
+public class CafeMenu{
     Map meunItems=new HashMap();
 
     public CafeMenu() {
@@ -29,7 +28,7 @@ public class CafeMenu implements Menu {
         meunItems.put(name,menuItem);
     }
 
-    @Override
+//    @Override
     public Iterator createIterator() {
         return meunItems.values().iterator();
     }

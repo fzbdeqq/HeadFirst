@@ -1,4 +1,4 @@
-package com.snail.headFirst.chapter9;
+package com.snail.headFirst.chapter9.iterator;
 
 import java.util.Iterator;
 
@@ -9,9 +9,9 @@ import java.util.Iterator;
  */
 public class Waitress {
 //    关心接口，而不是实现
-    Menu pancakeHouseMenu;
-    Menu dinerMenu;
-    Menu cafeMenu;
+    PancakeHouseMenu pancakeHouseMenu;
+    DinerMenu dinerMenu;
+    CafeMenu cafeMenu;
 
     public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu,CafeMenu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
