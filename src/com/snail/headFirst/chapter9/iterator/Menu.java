@@ -52,4 +52,14 @@ public class Menu extends MenuComponent {
     public Iterator createIterator(){
         return new CompositeIterator(menuComponents.iterator());
     }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
 }
