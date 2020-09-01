@@ -1,6 +1,9 @@
 package com.snail.headFirst.chapter9.iterator;
 
+import com.snail.headFirst.chapter9.composite.MenuComponent;
+
 import java.util.Iterator;
+import java.util.Stack;
 
 /**
  * @Author: SnailBBB
@@ -8,17 +11,42 @@ import java.util.Iterator;
  * @Date 2020/9/1 17:38
  */
 public class CompositeIterator implements Iterator {
+    Stack stack=new Stack();
 
     public CompositeIterator(Iterator iterator) {
+        stack.push(iterator);
     }
 
     @Override
     public boolean hasNext() {
-        return false;
+        if(stack.empty()){
+            return false;
+        }else {
+            Iterator iterator= (Iterator) stack.peek();
+            if(!iterator.hasNext()){
+                stack.pop();
+                return hasNext();
+            }else {
+                return true;
+            }
+        }
     }
 
     @Override
     public Object next() {
-        return null;
+        if(hasNext()){
+            Iterator iterator= (Iterator) stack.peek();
+            MenuComponent component= (MenuComponent) iterator.next();
+            if(component instanceof Menu){
+                stack.push(((Menu) component).createIterator());
+            }
+            return component;
+
+        }else {
+            return null;
+        }
+
     }
+
+
 }
