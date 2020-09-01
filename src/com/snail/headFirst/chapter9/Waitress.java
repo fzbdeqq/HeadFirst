@@ -11,18 +11,24 @@ public class Waitress {
 //    关心接口，而不是实现
     Menu pancakeHouseMenu;
     Menu dinerMenu;
+    Menu cafeMenu;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu,CafeMenu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
+        this.cafeMenu=cafeMenu;
     }
     public void printMenu(){
         Iterator pancakeIterator=pancakeHouseMenu.createIterator();
         Iterator dinerIterator=dinerMenu.createIterator();
+        Iterator cafeIterator=cafeMenu.createIterator();
+
         System.out.println("Menu\n----\nBreakfast");
         printMenu(pancakeIterator);
         System.out.println("\nLunch");
         printMenu(dinerIterator);
+        System.out.println("\nDinner");
+        printMenu(cafeIterator);
     }
 
     private void printMenu(Iterator iterator) {
