@@ -15,11 +15,27 @@ public class MenuComponentTestDrive {
 
         MenuComponent cafeMenu=new Menu("CAFE MENU","Diner");
 
+        MenuComponent dessertMenu=new Menu("DESSERT MENU","Dessert of course!");
+
         MenuComponent allMenus=new Menu("ALL Menus","all menus combined");
 
         allMenus.add(pancakeHouseMenu);
         allMenus.add(dinerMenu);
         allMenus.add(cafeMenu);
+
+        dinerMenu.add(new MenuItem("Pasta",
+                "Spaghetti with Marinara Sauce",
+                true,
+                3.89));
+
+        dinerMenu.add(dessertMenu);
+
+        dessertMenu.add(new MenuItem("Apple pie",
+                "Apple pie with Marinara Sauce",
+                true,
+                1.59));
+        WaitressComponent waitressComponent=new WaitressComponent(allMenus);
+        waitressComponent.printMenu();
 
 
     }
