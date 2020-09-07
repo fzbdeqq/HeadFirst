@@ -54,10 +54,7 @@
 ###Chapter10 State
 ###状态模式
 ####允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类
-###Chapter12 
-###Chapter13 
-###Chapter14 
-###Chapter15 Proxy
+###Chapter11 Proxy
 
 ###Bridge
 ###Builder
